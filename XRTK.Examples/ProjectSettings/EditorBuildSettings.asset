@@ -8,8 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/XRTK.Examples/BaseScene.unity
     guid: 092b39bb8f12afa498a539bd456a71d6
+  - enabled: 1
+    path: Assets/XRTK.Examples/Demos/HandControllerDemo/HandControllerDemo.unity
+    guid: 3160d42ef248a0048b97fa857507e124
+  - enabled: 1
+    path: Assets/XRTK.Examples/Demos/Locomotion/LocomotionDemo.unity
+    guid: fd363d554429d5040a0d8256d9b947cc
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 70e5c51675c90484282f50ad1fa398c8,
+      type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 93211635bf687864596171113810cc54,
+      type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: e5bb5b3643e4eba48a38c4ca94dd2836,
       type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: d7ac787bb3edc5f44827cbdcc92d5400,
       type: 2}
