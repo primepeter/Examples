@@ -4,8 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AR_VR_WrapperFramework.Utilities
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    ///    <remarks>
+    /// Only works in Unity 2020. Unity 2019 cant serialize Genercis Types. Therefore a concrete implementation is needed for Unity 2019
+    ///</remarks>
     [Serializable]
     public class ObservedList<T> : List<T>
     {
