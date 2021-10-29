@@ -15,7 +15,7 @@ namespace Assets.AR_VR_WrapperFramework
         
         public void dispatchEvent(BaseInputEventData eventData)
         {
-            int i;
+            
         }
     }
 }

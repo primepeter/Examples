@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using UnityEngine;
+using XRTK.Interfaces;
 using XRTK.Interfaces.InputSystem;
 using XRTK.Services;
 
@@ -20,34 +21,55 @@ public sealed class XRTK_Wrapper : MonoBehaviour
     ReadOnlyObservableCollection<GameObject> EventListener;
     ReadOnlyObservableCollection<GameObject> cache;
 
+    public bool IsInitialized { get; private set; }
+
     private void Awake()
     {
+        XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
+        if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
+        {
+            Initialize();
+        }
+    }
+
+    public void Initialize()
+    {
+        MixedRealityToolkit.TryGetSystem<XRTK.Interfaces.InputSystem.IMixedRealityInputSystem>(out InputSystem);
+        //EventListener = new ReadOnlyObservableCollection<GameObject>((ObservableCollection<GameObject>)InputSystem?.EventListeners);
+        if (correlator == null || InputSystem == null) //TODO
+        {
+            Debug.LogError($"The InputSystem is {InputSystem} \n The Correlator is {correlator}");
+            return;
+        }
+        InputSystem.OnInputEvent += correlator.dispatchEvent;
+        IsInitialized = true;
     }
 
     private void OnEnable()
     {
-        XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
-
-        MixedRealityToolkit.TryGetSystem<XRTK.Interfaces.InputSystem.IMixedRealityInputSystem>(out InputSystem);
-        //EventListener = new ReadOnlyObservableCollection<GameObject>((ObservableCollection<GameObject>)InputSystem?.EventListeners);
-        InputSystem.OnInputEvent += correlator.dispatchEvent;
+        //XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
+        //if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
+        //{
+        //    Initialize();
+        //}
     }
 
     private void Start()
     {
+        //XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
+        //if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
+        //{
+        //    Initialize();
+        //}
     }
 
     private void Update()
     {
-        if(cache?.Count != EventListener?.Count)
-        {
-            string breakpoint = "";
-        }
-        //print(cache?.ToString());
     }
 
     private void OnDisable()
     {
+        IsInitialized = false;
         print("disabled");
     }
 
