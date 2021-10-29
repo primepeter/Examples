@@ -60,7 +60,6 @@ namespace AR_VR_WrapperFramework.Utilities
             Updated();
         }
 
-
         public new T this[int index]
         {
             get
