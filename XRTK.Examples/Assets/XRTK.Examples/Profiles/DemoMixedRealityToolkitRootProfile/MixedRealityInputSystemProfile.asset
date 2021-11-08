@@ -14,33 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configurations:
   - instancedType:
-      reference: 4d4d36e3-6acb-45e5-8316-0b15a098ea2f
-    name: Unity Touch Data Provider
-    priority: 0
-    platformEntries:
-      runtimePlatforms:
-      - reference: dac9ead8-54f9-4935-a27f-9f82f465c972
-      - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-      - reference: bcac2cef-e793-47b8-9db7-116af668cb66
-      - reference: 97344133-03b4-4314-9581-e42d1aac91ba
-      - reference: 7dc72b4e-34f6-4b26-afd7-cde0c51f83a3
-      - reference: a2ffb628-3ce7-4759-9c66-8f2ba8d16fc2
-      - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
-    profile: {fileID: 11400000, guid: 30f1afb97be1db54e9e04aa6b965b410, type: 2}
-  - instancedType:
-      reference: a4d8d13b-253c-469a-a3a2-ecfe16dd969f
-    name: Unity Joystick Data Provider
-    priority: 0
-    platformEntries:
-      runtimePlatforms:
-      - reference: dac9ead8-54f9-4935-a27f-9f82f465c972
-      - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-      - reference: bcac2cef-e793-47b8-9db7-116af668cb66
-      - reference: 97344133-03b4-4314-9581-e42d1aac91ba
-      - reference: a2ffb628-3ce7-4759-9c66-8f2ba8d16fc2
-      - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
-    profile: {fileID: 11400000, guid: 69ab987a62681cf4d9f4042ef17b0ddd, type: 2}
-  - instancedType:
       reference: 9b116969-7f4b-4cf9-9d5a-4fba7793f50e
     name: OpenVR Data Controller Data Provider
     priority: 1
@@ -60,26 +33,6 @@ MonoBehaviour:
       - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
     profile: {fileID: 11400000, guid: 6bd4ff02967a9b24197b8cd2593ddfa4, type: 2}
   - instancedType:
-      reference: 
-    name: 
-    priority: 3
-    platformEntries:
-      runtimePlatforms:
-      - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-      - reference: 7dc72b4e-34f6-4b26-afd7-cde0c51f83a3
-      - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 9d96d660-cb10-48b8-b2a7-3262adb2ab14
-    name: Windows Dictation Data Provider
-    priority: 4
-    platformEntries:
-      runtimePlatforms:
-      - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-      - reference: 7dc72b4e-34f6-4b26-afd7-cde0c51f83a3
-      - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
-    profile: {fileID: 0}
-  - instancedType:
       reference: 0de5da40-feb8-4891-b9b2-942eafd041b9
     name: Oculus Controller Data Provider
     priority: 5
@@ -89,52 +42,14 @@ MonoBehaviour:
   - instancedType:
       reference: ea666456-baef-4412-a829-a4c7132e98c3
     name: Oculus Hand Controller Data Provider
-    priority: 6
+    priority: 2
     platformEntries:
       runtimePlatforms:
       - reference: db1acc26-ec8d-4bc6-afca-c51351b2da2e
       - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
       - reference: 7dc72b4e-34f6-4b26-afd7-cde0c51f83a3
       - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-    profile: {fileID: 11400000, guid: d9b3b9f611dffee4883c089dc35e0ce7, type: 2}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 7
-    platformEntries:
-      runtimePlatforms: []
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 8
-    platformEntries:
-      runtimePlatforms: []
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 9
-    platformEntries:
-      runtimePlatforms: []
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 067ce7d4-8277-4e18-834e-3dc712074b72
-    name: Mouse Data Provider
-    priority: 10
-    platformEntries:
-      runtimePlatforms:
-      - reference: c838c4f5-a87e-48c7-8742-09a4d85fc3bc
-      - reference: db1acc26-ec8d-4bc6-afca-c51351b2da2e
-      - reference: 58de2d2a-db5f-4090-a949-4028b8ea3afd
-    profile: {fileID: 11400000, guid: a2a4350cf0bc6a84cb524749c3c95eae, type: 2}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 11
-    platformEntries:
-      runtimePlatforms: []
-    profile: {fileID: 0}
+    profile: {fileID: 11400000, guid: db3ed07409b466d46aa0955fa68aa352, type: 2}
   focusProviderType:
     reference: 249d4d78-cadd-45ba-9438-db9fc2509213
   gazeProviderType:
@@ -164,6 +79,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2f6c29c72cd30c74f9717c932bd87a4a, type: 2}
   inputActionsProfile: {fileID: 11400000, guid: 399335ccc89c4d12b79f3539ca7771db,
     type: 2}
-  speechCommandsProfile: {fileID: 11400000, guid: 89759c8b9c98420794a5d650ce3b2f90,
-    type: 2}
+  speechCommandsProfile: {fileID: 0}
   gesturesProfile: {fileID: 11400000, guid: 47280a6380eb40d5952dc5a5da00a89e, type: 2}
