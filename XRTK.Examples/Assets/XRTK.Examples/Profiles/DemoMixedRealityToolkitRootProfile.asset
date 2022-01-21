@@ -22,52 +22,28 @@ MonoBehaviour:
       - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
     profile: {fileID: 11400000, guid: 929bff407477a434c9168e944d0ff548, type: 2}
   - instancedType:
-      reference: ec0d061b-2711-4927-8a2a-010b1f97c2b9
-    name: XRTK _ Event System Wrapper
+      reference: 18c9caf0-8d36-4add-bb49-cdf7561cf793
+    name: Mixed Reality Input System
     priority: 0
     platformEntries:
       runtimePlatforms:
       - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
     profile: {fileID: 11400000, guid: 41481abd1e4d94e498f813c4e7e6d251, type: 2}
   - instancedType:
-      reference: 
-    name: 
+      reference: 6191eb65-ec4c-434a-9a43-939fbc398582
+    name: Examples Hub System
     priority: 1
     platformEntries:
       runtimePlatforms:
       - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 0}
+    profile: {fileID: 11400000, guid: db0cf88aa415d694aa69c874ac97b854, type: 2}
   - instancedType:
-      reference: 
-    name: 
+      reference: 9453c088-285e-47aa-bfbb-dafd9109fdd5
+    name: Locomotion System
     priority: 2
     platformEntries:
       runtimePlatforms:
       - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 3
-    platformEntries:
-      runtimePlatforms:
-      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 
-    name: 
-    priority: 4
-    platformEntries:
-      runtimePlatforms:
-      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 0}
-  - instancedType:
-      reference: 6191eb65-ec4c-434a-9a43-939fbc398582
-    name: Examples Hub System
-    priority: 5
-    platformEntries:
-      runtimePlatforms:
-      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 11400000, guid: db0cf88aa415d694aa69c874ac97b854, type: 2}
+    profile: {fileID: 11400000, guid: 27489e63105110d4b8c49b002dbab157, type: 2}
   registeredServiceProvidersProfile: {fileID: 11400000, guid: 511ad0cf7c4894a4b871c18a457f96f8,
     type: 2}
