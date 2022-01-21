@@ -34,6 +34,7 @@ public sealed class XRTK_Wrapper : MonoBehaviour
 
     public void Initialize()
     {
+        print("XRTK_Wrapper Initializing");
         MixedRealityToolkit.TryGetSystem<XRTK.Interfaces.InputSystem.IMixedRealityInputSystem>(out InputSystem);
         //EventListener = new ReadOnlyObservableCollection<GameObject>((ObservableCollection<GameObject>)InputSystem?.EventListeners);
         if (correlator == null || InputSystem == null) //TODO
@@ -43,6 +44,7 @@ public sealed class XRTK_Wrapper : MonoBehaviour
         }
         InputSystem.OnInputEvent += correlator.dispatchEvent;
         IsInitialized = true;
+        print(IsInitialized ? "Init successfull" : "Init failed");
     }
 
     private void OnEnable()
