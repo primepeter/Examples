@@ -128,7 +128,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.2.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: d7ac787bb3edc5f44827cbdcc92d5400, type: 2}
+  - {fileID: 11400000, guid: 80eb06d45dfae924c99d296aa716fafa, type: 2}
+  - {fileID: 5577665964894218372, guid: ec07ea62296182d4b8e1d0f971231f5c, type: 2}
+  - {fileID: 11400000, guid: 70e5c51675c90484282f50ad1fa398c8, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -703,7 +707,8 @@ PlayerSettings:
   gcIncremental: 0
   assemblyVersionValidation: 1
   gcWBarrierValidation: 0
-  apiCompatibilityLevelPerPlatform: {}
+  apiCompatibilityLevelPerPlatform:
+    : 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: com.xrtk.examples
@@ -730,6 +735,7 @@ PlayerSettings:
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:
+      CodeGeneration: False
       OfflineMapsManagement: False
       HumanInterfaceDevice: False
       Location: False
@@ -741,7 +747,6 @@ PlayerSettings:
       PrivateNetworkClientServer: False
       InternetClientServer: False
       VideosLibrary: False
-      BackgroundMediaPlayback: False
       Objects3D: False
       RemoteSystem: False
       BlockedChatMessages: False
@@ -764,9 +769,9 @@ PlayerSettings:
       PointOfService: False
       RecordedCallsFolder: False
       Contacts: False
-      InternetClient: False
       Proximity: False
-      CodeGeneration: False
+      InternetClient: False
+      BackgroundMediaPlayback: False
       EnterpriseAuthentication: False
   metroTargetDeviceFamilies:
     Desktop: True
