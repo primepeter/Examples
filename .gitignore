@@ -37,7 +37,7 @@ ExportedObj/
 obj/
 *.svd
 *.userprefs
-/*.csproj
+#/*.csproj
 *.csproj
 *.pidb
 *.suo
