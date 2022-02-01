@@ -53,15 +53,17 @@
     <UnityVersion>2020.3.15f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\EventFramework\Nesper_611.cs" />
     <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper_Deprecated.cs" />
-    <Compile Include="Assets\EventFramework\Nesper.cs" />
     <Compile Include="Assets\EventFramework\XRTK_Wrapper.cs" />
     <Compile Include="Assets\EventFramework\SystemTestWizardProfile.cs" />
     <Compile Include="Assets\EventFramework\EventCorrelator.cs" />
     <Compile Include="Assets\EventFramework\IEventSystemWrapper.cs" />
     <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\Nesper_853.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Dependencies\Newtonsoft.Json_901.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Avro.dll" />
@@ -70,13 +72,17 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Dependencies\MySql.Data.xml" />
     <None Include="Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.IO.xml" />
+    <None Include="Assets\Dependencies\Confluent.Apache.Avro.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.PgSQL.dll" />
     <None Include="Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.xml" />
+    <None Include="Assets\Dependencies\Castle.Core.dll" />
+    <None Include="Assets\Dependencies\Castle.Core.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
@@ -84,6 +90,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Dependencies\MySql.Data.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
@@ -318,24 +325,6 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>Library\PackageCache\org.nuget.system.runtime.compilerservices.unsafe@4.5.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.1-preview.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions">
-      <HintPath>Library\PackageCache\org.nuget.system.threading.tasks.extensions@4.5.1\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Scriban">
-      <HintPath>Library\PackageCache\org.nuget.scriban@2.1.0\Scriban.dll</HintPath>
-    </Reference>
-    <Reference Include="NEsper.IO">
-      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.IO.dll</HintPath>
-    </Reference>
-    <Reference Include="NEsper.Data.PgSQL">
-      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.PgSQL.dll</HintPath>
-    </Reference>
-    <Reference Include="NEsper">
-      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.dll</HintPath>
-    </Reference>
     <Reference Include="NEsper.Data.MySQL">
       <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.MySQL.dll</HintPath>
     </Reference>
@@ -344,6 +333,36 @@
     </Reference>
     <Reference Include="NEsper.Log.NLog">
       <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Log.NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.1-preview.1\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NEsper.IO">
+      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="NEsper.Data.PgSQL">
+      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.PgSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>Library\PackageCache\org.nuget.system.threading.tasks.extensions@4.5.1\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="NEsper">
+      <HintPath>Assets\NEsper-6.1.1\lib\netstandard2.0\NEsper.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core">
+      <HintPath>Assets\Dependencies\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Scriban">
+      <HintPath>Library\PackageCache\org.nuget.scriban@2.1.0\Scriban.dll</HintPath>
+    </Reference>
+    <Reference Include="Confluent.Apache.Avro">
+      <HintPath>Assets\Dependencies\Confluent.Apache.Avro.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>Assets\Dependencies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json_901">
+      <HintPath>Assets\Dependencies\Newtonsoft.Json_901.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
