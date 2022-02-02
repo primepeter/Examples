@@ -2,7 +2,40 @@
   <assembly fullname="System.Core">
     <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
   </assembly>
-  <assembly fullname="System.Configuration">
-	<type fullname="System.Configuration.ConfigurationManager" preserve="all" />
-  </assembly>
+	<!--
+	Einträge von MRTK Seite übernommen:
+	https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/updates-deployment/mrtk-and-managed-code-stripping?view=mrtkunity-2021-05
+    This link.xml file is provided to prevent MRTK code from being optimized away 
+    during IL2CPP builds.More details on when this is needed and why this is needed 
+    can be found here: https://github.com/microsoft/MixedRealityToolkit-Unity/issues/5273 
+    If your application doesn't use some specific services (for example, if teleportation system is 
+    disabled in the profile), it is possible to remove their corresponding lines down 
+    below(in the previous example, we would remove the TeleportSystem below). 
+    It's recommended to start with this list and narrow down if you want to ensure 
+    specific bits of code get optimized away. 
+  -->
+	<!--Rename to XRTK Namespaces <assembly fullname="XRTK.Services..." preserve="all"/> -->
+	<assembly fullname = "XRTK" preserve="all"/>
+	<assembly fullname = "XRTK.SDK" preserve="all"/>
+	<!-- Core systems -->
+	<assembly fullname = "XRTK.Services.BoundarySystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.CameraSystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.DiagnosticsSystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.InputSystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.SceneSystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.SpatialAwarenessSystem" preserve="all"/>
+	<assembly fullname = "XRTK.Services.TeleportSystem" preserve="all"/>
+	<!-- Data providers -->
+	<assembly fullname = "XRTK.Providers.LeapMotion" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.OpenVR" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.UnityAR" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.WindowsMixedReality.Shared" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.WindowsMixedReality" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.XRSDK.WindowsMixedReality" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.WindowsVoiceInput" preserve="all"/>
+	<assembly fullname = "XRTK.Providers.XRSDK" preserve="all"/>
+	<!-- Extension services -->
+	<assembly fullname = "XRTK.Extensions.HandPhysics" preserve="all"/>
+	<assembly fullname = "XRTK.Extensions.Tracking" preserve="all"/>
+	<assembly fullname = "XRTK.Extensions.SceneTransitionService" preserve="all"/>
 </linker>
