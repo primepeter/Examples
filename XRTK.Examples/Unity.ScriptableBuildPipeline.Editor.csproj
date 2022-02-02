@@ -382,14 +382,32 @@
  <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
  <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
- <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.system.runtime.compilerservices.unsafe@4.5.0/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <Reference Include="NEsper.Avro">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.Avro.dll</HintPath>
+ </Reference>
+ <Reference Include="Confluent.Apache.Avro">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/Dependencies/Confluent.Apache.Avro.dll</HintPath>
+ </Reference>
+ <Reference Include="MySql.Data">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/Dependencies/MySql.Data.dll</HintPath>
+ </Reference>
+ <Reference Include="NEsper.IO">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.IO.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Threading.Tasks.Extensions">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.system.threading.tasks.extensions@4.5.1/System.Threading.Tasks.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Castle.Core">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/Dependencies/Castle.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Scriban">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.scriban@2.1.0/Scriban.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json_901">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/Dependencies/Newtonsoft.Json_901.dll</HintPath>
  </Reference>
  <Reference Include="NEsper.Data.MySQL">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.Data.MySQL.dll</HintPath>
- </Reference>
- <Reference Include="NEsper.Avro">
- <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.Avro.dll</HintPath>
  </Reference>
  <Reference Include="NEsper.Log.NLog">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.Log.NLog.dll</HintPath>
@@ -397,20 +415,14 @@
  <Reference Include="Newtonsoft.Json">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.1-preview.1/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
- <Reference Include="NEsper.IO">
- <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.IO.dll</HintPath>
- </Reference>
  <Reference Include="NEsper.Data.PgSQL">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.Data.PgSQL.dll</HintPath>
- </Reference>
- <Reference Include="System.Threading.Tasks.Extensions">
- <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.system.threading.tasks.extensions@4.5.1/System.Threading.Tasks.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="NEsper">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Assets/NEsper-6.1.1/lib/netstandard2.0/NEsper.dll</HintPath>
  </Reference>
- <Reference Include="Scriban">
- <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.scriban@2.1.0/Scriban.dll</HintPath>
+ <Reference Include="System.Runtime.CompilerServices.Unsafe">
+ <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/org.nuget.system.runtime.compilerservices.unsafe@4.5.0/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>C:/Users/schekatz/Desktop/Unity-Tests/Examples_Fork/XRTK.Examples/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

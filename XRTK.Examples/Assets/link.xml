@@ -1,0 +1,8 @@
+<linker>
+  <assembly fullname="System.Core">
+    <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+  </assembly>
+  <assembly fullname="System.Configuration">
+	<type fullname="System.Configuration.ConfigurationManager" preserve="all" />
+  </assembly>
+</linker>
