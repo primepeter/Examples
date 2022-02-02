@@ -25,7 +25,7 @@ public sealed class XRTK_Wrapper : MonoBehaviour
 
     private void Awake()
     {
-        XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
+        XRTK_Instance = gameObject.GetComponent<MixedRealityToolkit>() as MixedRealityToolkit;
         if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
         {
             Initialize();
@@ -45,6 +45,7 @@ public sealed class XRTK_Wrapper : MonoBehaviour
         InputSystem.OnInputEvent += correlator.dispatchEvent;
         IsInitialized = true;
         print(IsInitialized ? "Init successfull" : "Init failed");
+        //Nesper_611_test test= new Nesper_611_test();
     }
 
     private void OnEnable()
