@@ -53,7 +53,15 @@
     <UnityVersion>2020.3.15f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Dummy.cs" />
+    <Compile Include="Assets\EventFramework\Nesper_611_test.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper_Deprecated.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_Wrapper.cs" />
+    <Compile Include="Assets\EventFramework\SystemTestWizardProfile.cs" />
+    <Compile Include="Assets\EventFramework\EventCorrelator.cs" />
+    <Compile Include="Assets\EventFramework\IEventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\Dummy.cs" />
+    <Compile Include="Assets\EventFramework\Nesper_853.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -313,9 +321,6 @@
     </Reference>
     <Reference Include="NEsper.Data.MySQL">
       <HintPath>Assets\Plugins\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.MySQL.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft_901.Json">
-      <HintPath>Assets\Plugins\Newtonsoft_901.Json.dll</HintPath>
     </Reference>
     <Reference Include="NEsper.Log.NLog">
       <HintPath>Assets\Plugins\NEsper-6.1.1\lib\netstandard2.0\NEsper.Log.NLog.dll</HintPath>
@@ -965,10 +970,6 @@
     <ProjectReference Include="XRTK.Editor.csproj">
       <Project>{A7861FF0-4BC8-0890-74D0-83BFD188B016}</Project>
       <Name>XRTK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="EventFramework.csproj">
-      <Project>{7FB9E36E-25F4-4E13-AD2A-8F7EAFE6E633}</Project>
-      <Name>EventFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
