@@ -1,0 +1,12 @@
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.csprojAssemblyReference.cache
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.AssemblyInfoInputs.cache
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.AssemblyInfo.cs
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.csproj.CoreCompileInputs.cache
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.xml
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\bin\Debug\netstandard2.0\NEsper.dll.config
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\bin\Debug\netstandard2.0\NEsper.deps.json
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\bin\Debug\netstandard2.0\NEsper.dll
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\bin\Debug\netstandard2.0\NEsper.pdb
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\bin\Debug\netstandard2.0\NEsper.xml
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.dll
+C:\Users\schekatz\Downloads\NEsper-6.1.1\NEsper-6.1.1\src\NEsper\NEsper\obj\Debug\netstandard2.0\NEsper.pdb

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NEsper.Log.NLog</name>
+    </assembly>
+    <members>
+        <member name="T:com.espertech.esper.compat.logger.LoggerNLog">
+            <summary>
+            A logger implementation based on NLog.
+            </summary>
+            <seealso cref="T:com.espertech.esper.compat.logging.ILog" />
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.SimpleLayout">
+            <summary>
+            Gets the simple layout.
+            </summary>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.Console">
+            <summary>
+            Gets the console target.
+            </summary>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.MemoryTarget">
+            <summary>
+            Gets the memory target - this should only be used for debugging purposes.
+            </summary>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Register">
+            <summary>
+            Registers this logger.
+            </summary>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.ResetConfig(NLog.Config.LoggingConfiguration)">
+            <summary>
+            Resets the configuration.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.BasicConfig">
+            <summary>
+            A simple configuration for "basic" setups - mostly testing.
+            </summary>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.#ctor(NLog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:com.espertech.esper.compat.logger.LoggerNLog"/> class.
+            </summary>
+            <param name="log">The log.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.ChangeConfiguration">
+            <summary>
+            Changes the configuration.
+            </summary>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.IsDebugEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance severity for debug is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is debug enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.IsInfoEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance severity for info is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is information enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.IsWarnEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance severity for warning is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is warn enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.IsErrorEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance severity for error is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is error enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:com.espertech.esper.compat.logger.LoggerNLog.IsFatalEnabled">
+            <summary>
+            Gets or sets a value indicating whether this instance severity for fatal is enabled.
+            </summary>
+            <value>
+              <c>true</c> if this instance is fatal enabled; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Debug(System.String)">
+            <summary>
+            Writes the specified message to the logger at debug severity.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Debug(System.String,System.Object[])">
+            <summary>
+            Writes the specified message to the logger at debug severity.
+            </summary>
+            <param name="messageFormat">The message format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Debug(System.String,System.Exception)">
+            <summary>
+            Writes the specified message to the logger at debug severity.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Info(System.String)">
+            <summary>
+            Writes the specified message to the logger at info severity.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Info(System.String,System.Object[])">
+            <summary>
+            Writes the specified message to the logger at info severity.
+            </summary>
+            <param name="messageFormat">The message format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Info(System.String,System.Exception)">
+            <summary>
+            Writes the specified message to the logger at info severity.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Warn(System.String)">
+            <summary>
+            Writes the specified message to the logger at warning severity.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Warn(System.String,System.Object[])">
+            <summary>
+            Writes the specified message to the logger at warning severity.
+            </summary>
+            <param name="messageFormat">The message format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Warn(System.String,System.Exception)">
+            <summary>
+            Writes the specified message to the logger at warning severity.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Error(System.String)">
+            <summary>
+            Writes the specified message to the logger at error severity.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Error(System.String,System.Object[])">
+            <summary>
+            Writes the specified message to the logger at error severity.
+            </summary>
+            <param name="messageFormat">The message format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Error(System.String,System.Exception)">
+            <summary>
+            Writes the specified message to the logger at error severity.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Fatal(System.String)">
+            <summary>
+            Writes the specified message to the logger at fatal severity.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Fatal(System.String,System.Object[])">
+            <summary>
+            Writes the specified message to the logger at fatal severity.
+            </summary>
+            <param name="messageFormat">The message format.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:com.espertech.esper.compat.logger.LoggerNLog.Fatal(System.String,System.Exception)">
+            <summary>
+            Writes the specified message to the logger at fatal severity.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="e">The e.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\schekatz\\Downloads\\NEsper-6.1.1\\NEsper-6.1.1\\src\\NEsper\\NEsper\\NEsper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\schekatz\\Downloads\\NEsper-6.1.1\\NEsper-6.1.1\\src\\NEsper\\NEsper\\NEsper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\schekatz\\Downloads\\NEsper-6.1.1\\NEsper-6.1.1\\src\\NEsper\\NEsper\\NEsper.csproj",
+        "projectName": "NEsper",
+        "projectPath": "C:\\Users\\schekatz\\Downloads\\NEsper-6.1.1\\NEsper-6.1.1\\src\\NEsper\\NEsper\\NEsper.csproj",
+        "packagesPath": "C:\\Users\\schekatz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\schekatz\\Downloads\\NEsper-6.1.1\\NEsper-6.1.1\\src\\NEsper\\NEsper\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\schekatz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\schekatz\\Desktop\\Unity-Tests\\Examples_Fork\\XRTK.Examples\\Packages\\MyNuGets": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Antlr4.Runtime.Standard": {
+              "target": "Package",
+              "version": "[4.7.1.1, )"
+            },
+            "Castle.Core": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "Castle.Windsor": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Common.Logging": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Common.Logging.Core": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "Crc32.NET": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "XLR8.CGLib": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
