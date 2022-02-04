@@ -13,7 +13,7 @@ public class Dummy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Update");
+        
     }
 
     private void Awake()

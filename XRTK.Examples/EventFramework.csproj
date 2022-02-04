@@ -753,6 +753,10 @@
       <Project>{D91E84D3-19ED-B231-3677-035D2D1BA3B6}</Project>
       <Name>XRTK</Name>
     </ProjectReference>
+    <ProjectReference Include="XRTK.SDK.csproj">
+      <Project>{3D922406-3089-2616-6A67-9F1E09FC0A45}</Project>
+      <Name>XRTK.SDK</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

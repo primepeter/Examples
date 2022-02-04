@@ -1,13 +1,16 @@
 {
-    "name": "NesperIntegration",
+    "name": "EventFramework",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "XRTK",
+        "XRTK.SDK"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": true,
+    "autoReferenced": false,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
