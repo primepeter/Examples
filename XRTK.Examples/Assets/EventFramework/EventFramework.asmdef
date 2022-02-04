@@ -8,7 +8,7 @@
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
+    "overrideReferences": false,
     "precompiledReferences": [
         "Newtonsoft_901.Json.dll",
         "NEsper.IO.dll",
@@ -39,8 +39,7 @@
         "System.Runtime.Loader.dll",
         "System.Security.AccessControl.dll",
         "System.Security.Permissions.dll",
-        "System.Security.Principal.Windows.dll",
-        "NEsper.dll"
+        "System.Security.Principal.Windows.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [],

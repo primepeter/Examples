@@ -60,6 +60,7 @@
     <Compile Include="Assets\EventFramework\EventCorrelator.cs" />
     <Compile Include="Assets\EventFramework\IEventSystemWrapper.cs" />
     <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\Dummy.cs" />
     <Compile Include="Assets\EventFramework\Nesper_853.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -314,9 +315,6 @@
     </Reference>
     <Reference Include="NEsper.Data.MySQL">
       <HintPath>Assets\Plugins\NEsper-6.1.1\lib\netstandard2.0\NEsper.Data.MySQL.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft_901.Json">
-      <HintPath>Assets\Plugins\Newtonsoft_901.Json.dll</HintPath>
     </Reference>
     <Reference Include="NEsper.Log.NLog">
       <HintPath>Assets\Plugins\NEsper-6.1.1\lib\netstandard2.0\NEsper.Log.NLog.dll</HintPath>
