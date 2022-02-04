@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3E0505B4-8D11-7206-6A09-0D6514B19EC1}</ProjectGuid>
+    <ProjectGuid>{7FB9E36E-25F4-4E13-AD2A-8F7EAFE6E633}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>EventFramework</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -53,31 +53,17 @@
     <UnityVersion>2020.3.15f2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Dummy.cs" />
+    <Compile Include="Assets\EventFramework\Nesper_611_test.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper_Deprecated.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_Wrapper.cs" />
+    <Compile Include="Assets\EventFramework\SystemTestWizardProfile.cs" />
+    <Compile Include="Assets\EventFramework\EventCorrelator.cs" />
+    <Compile Include="Assets\EventFramework\IEventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\XRTK_EventSystemWrapper.cs" />
+    <Compile Include="Assets\EventFramework\Nesper_853.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\link.xml" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\EventFramework\EventFramework.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -301,6 +287,21 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UWP.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.15f2\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyModel">
       <HintPath>Assets\Plugins\Microsoft.Extensions.DependencyModel.dll</HintPath>
@@ -746,229 +747,11 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="XRTK.Oculus.Editor.BuildPipeline.csproj">
-      <Project>{27FD9E49-E077-E6D1-AFA1-C26163D02EE7}</Project>
-      <Name>XRTK.Oculus.Editor.BuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{823B6500-4AD9-FAAA-6F1A-FC8F49B88A9B}</Project>
-      <Name>Unity.VSCode.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.SDK.Editor.csproj">
-      <Project>{54C1D8CD-4955-39A2-6F38-FF2DDD4B2336}</Project>
-      <Name>XRTK.SDK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Lumin.csproj">
-      <Project>{5B522912-FCE5-7CE5-DF96-E65EEAEB5142}</Project>
-      <Name>XRTK.Lumin</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.CacheServer.csproj">
-      <Project>{AC0F1DD5-5769-B2A9-CFC5-4B747C4A17C5}</Project>
-      <Name>UnityEditor.CacheServer</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.csproj">
-      <Project>{C4F380BE-234A-B69B-E31E-3DFF3BF9E249}</Project>
-      <Name>Unity.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{2DC700FA-339B-D47C-B760-99EC78F7A2C6}</Project>
-      <Name>Unity.TextMeshPro.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Tests.Services.csproj">
-      <Project>{6B24C515-6E50-D84E-B305-6BA98F173B49}</Project>
-      <Name>XRTK.Tests.Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Ultraleap.Editor.csproj">
-      <Project>{9FBFA4B3-E96D-4E04-1A11-79D61B2C2EAF}</Project>
-      <Name>XRTK.Ultraleap.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Oculus.csproj">
-      <Project>{86DDAAEB-BE7D-C824-E319-A65DA8D74799}</Project>
-      <Name>XRTK.Oculus</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5FCEF53E-9AA0-5A98-CDF6-77064ED0AA65}</Project>
-      <Name>Unity.Rider.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Lumin.Native.csproj">
-      <Project>{B8D3850B-11FD-3E78-D31D-9CC337D77B89}</Project>
-      <Name>XRTK.Lumin.Native</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.SpatialTracking.csproj">
-      <Project>{934EF472-AB13-86D2-CC09-316122589399}</Project>
-      <Name>UnityEngine.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
-      <Project>{37B5D57B-1246-AD68-8B50-A6D3EA6ED324}</Project>
-      <Name>Unity.EditorCoroutines.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.SDK.csproj">
-      <Project>{3D922406-3089-2616-6A67-9F1E09FC0A45}</Project>
-      <Name>XRTK.SDK</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.InteractionSubsystems.csproj">
-      <Project>{6EE4923D-904B-D287-296F-035FFCE1AC79}</Project>
-      <Name>Unity.XR.InteractionSubsystems</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.MockHMD.csproj">
-      <Project>{9929DE2E-0A47-C58B-99A7-2152F17ACFB9}</Project>
-      <Name>Unity.XR.MockHMD</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.WindowsMixedReality.Editor.csproj">
-      <Project>{87E60CA1-E151-C068-37CB-ABB8542AA65D}</Project>
-      <Name>Unity.XR.WindowsMixedReality.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.ARSubsystems.Editor.csproj">
-      <Project>{A88E3638-7594-5416-BABA-6921B86D30A9}</Project>
-      <Name>Unity.XR.ARSubsystems.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.csproj">
-      <Project>{E9F7F99E-D796-706F-0963-83BD657DB622}</Project>
-      <Name>Unity.XR.Management</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.ARSubsystems.csproj">
-      <Project>{9D4D2356-53FB-8624-EB8A-714B140CB94C}</Project>
-      <Name>Unity.XR.ARSubsystems</Name>
-    </ProjectReference>
     <ProjectReference Include="XRTK.csproj">
       <Project>{D91E84D3-19ED-B231-3677-035D2D1BA3B6}</Project>
       <Name>XRTK</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Addressables.Editor.csproj">
-      <Project>{1FD32BAB-8F0C-AAFB-C7AA-11C294A4450C}</Project>
-      <Name>Unity.Addressables.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Examples.Demos.Gltf.csproj">
-      <Project>{4FB6639C-FD6F-3D5A-E5DB-A3C66A999786}</Project>
-      <Name>XRTK.Examples.Demos.Gltf</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.WindowsMixedReality.Editor.csproj">
-      <Project>{0D4ED641-907D-1630-6FB4-5ECD4277FDBE}</Project>
-      <Name>XRTK.WindowsMixedReality.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="LeapMotion.LeapCSharp.csproj">
-      <Project>{14832AD6-327E-5C46-E306-9FA126BDD77D}</Project>
-      <Name>LeapMotion.LeapCSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Editor.BuildPipeline.csproj">
-      <Project>{737B057D-F6CB-5275-83D3-75E1FD468DC9}</Project>
-      <Name>XRTK.Editor.BuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.glTF.Editor.csproj">
-      <Project>{E799240E-2229-4FDE-DFE5-0C6B21B375AB}</Project>
-      <Name>XRTK.glTF.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.WindowsMixedReality.csproj">
-      <Project>{1D5022BA-A2C4-21FE-772A-B2DE94D5BF42}</Project>
-      <Name>Unity.XR.WindowsMixedReality</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{E4A600A1-621E-FF1C-AB09-104DA9236E00}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.Management.Editor.csproj">
-      <Project>{1774B728-AC76-CF04-735A-8138F65E2295}</Project>
-      <Name>Unity.XR.Management.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Lumin.Editor.csproj">
-      <Project>{383A6059-C8E5-DCB2-ED59-066442196BC5}</Project>
-      <Name>XRTK.Lumin.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.glTF.csproj">
-      <Project>{5A5A6573-82CE-E1C1-1756-5830A17B6329}</Project>
-      <Name>XRTK.glTF</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{09E64B43-8F86-B5E5-986D-AC1971CF0800}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Examples.csproj">
-      <Project>{2A238E51-B1EB-F2AC-7579-012C1BA06CE8}</Project>
-      <Name>XRTK.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Oculus.Editor.csproj">
-      <Project>{31DBE174-39BB-8815-8E10-189F3C407BF3}</Project>
-      <Name>XRTK.Oculus.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Subsystem.Registration.csproj">
-      <Project>{6D55A90B-08D7-9E7D-3691-93BB5CC403E1}</Project>
-      <Name>Unity.Subsystem.Registration</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ResourceManager.csproj">
-      <Project>{F116FC88-6E90-8B3E-6413-D158694855EC}</Project>
-      <Name>Unity.ResourceManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.WindowsMixedReality.Editor.BuildPipeline.csproj">
-      <Project>{067EC57C-5917-783A-237B-6E7087DD30D3}</Project>
-      <Name>XRTK.WindowsMixedReality.Editor.BuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.XR.MockHMD.Editor.csproj">
-      <Project>{DFEC3D71-8684-C668-2688-8220F964DF46}</Project>
-      <Name>Unity.XR.MockHMD.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Lumin.Editor.BuildPipeline.csproj">
-      <Project>{A84819B3-6643-2553-5469-8323ED712881}</Project>
-      <Name>XRTK.Lumin.Editor.BuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.MagicLeap.csproj">
-      <Project>{2407C51D-F7E0-D6EA-2940-A22303AF0FCA}</Project>
-      <Name>UnityEngine.XR.MagicLeap</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Examples.Demos.CustomServices.Editor.csproj">
-      <Project>{9E295E06-42E4-5AA2-49C5-5863B0A1F025}</Project>
-      <Name>XRTK.Examples.Demos.CustomServices.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.XR.MagicLeap.csproj">
-      <Project>{EC5368A6-9A06-8A73-E8A7-62837F6C6C1B}</Project>
-      <Name>UnityEditor.XR.MagicLeap</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.XR.LegacyInputHelpers.csproj">
-      <Project>{6246A7F4-1A7C-6776-57A7-4842D73C3858}</Project>
-      <Name>UnityEngine.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.XR.LegacyInputHelpers.csproj">
-      <Project>{E5D6CD52-B543-49D9-89F9-81404674891E}</Project>
-      <Name>UnityEditor.XR.LegacyInputHelpers</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.WindowsMixedReality.csproj">
-      <Project>{3A1FD05B-ED2E-F003-A946-423225AD1179}</Project>
-      <Name>XRTK.WindowsMixedReality</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
-      <Project>{7E3EF73B-31F9-01DB-0B5A-722591EAAC1C}</Project>
-      <Name>Unity.ScriptableBuildPipeline</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Examples.Editor.csproj">
-      <Project>{E3608480-E1BE-69E7-80E6-29CF53CB00BD}</Project>
-      <Name>XRTK.Examples.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
-      <Project>{32F9F33D-1E22-3D6C-B349-A38A2F6B9A04}</Project>
-      <Name>Unity.ScriptableBuildPipeline.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEditor.SpatialTracking.csproj">
-      <Project>{7BAC42DC-9DFC-1632-A9D0-C050D871E73C}</Project>
-      <Name>UnityEditor.SpatialTracking</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Ultraleap.csproj">
-      <Project>{4C63BEF8-4B2D-D287-1A13-D17926F29F66}</Project>
-      <Name>XRTK.Ultraleap</Name>
-    </ProjectReference>
-    <ProjectReference Include="XRTK.Editor.csproj">
-      <Project>{A7861FF0-4BC8-0890-74D0-83BFD188B016}</Project>
-      <Name>XRTK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="EventFramework.csproj">
-      <Project>{7FB9E36E-25F4-4E13-AD2A-8F7EAFE6E633}</Project>
-      <Name>EventFramework</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

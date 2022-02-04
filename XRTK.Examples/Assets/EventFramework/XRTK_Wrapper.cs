@@ -39,22 +39,22 @@ public sealed class XRTK_Wrapper : MonoBehaviour
         //EventListener = new ReadOnlyObservableCollection<GameObject>((ObservableCollection<GameObject>)InputSystem?.EventListeners);
         if (correlator == null || InputSystem == null) //TODO
         {
-            Debug.LogError($"The InputSystem is {InputSystem} \n The Correlator is {correlator}");
+            Debug.Log($"The InputSystem is {InputSystem.ToString()} \n The Correlator is {correlator}");
             return;
         }
         InputSystem.OnInputEvent += correlator.dispatchEvent;
         IsInitialized = true;
-        print(IsInitialized ? "Init successfull" : "Init failed");
-        //Nesper_611_test test= new Nesper_611_test();
+        Debug.Log(IsInitialized ? "Init successfull" : "Init failed");
+        Nesper_611_test test= new Nesper_611_test();
     }
 
     private void OnEnable()
     {
         //XRTK_Instance = gameObject.GetComponentInChildren(typeof(MixedRealityToolkit), true) as MixedRealityToolkit;
-        //if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
-        //{
-        //    Initialize();
-        //}
+        if (MixedRealityToolkit.IsInitialized && !this.IsInitialized)
+        {
+            Initialize();
+        }
     }
 
     private void Start()

@@ -2,6 +2,7 @@
 using com.espertech.esper.client.soda;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace Assets.AR_VR_WrapperFramework
         {
             this.epService = EPServiceProviderManager.GetDefaultProvider();
             this.config = new Configuration();
+            Debug.WriteLine("Nesper lebendig `o_o´ ");
         }
 
         public Nesper_611_test(EPServiceProvider epService, Configuration config)

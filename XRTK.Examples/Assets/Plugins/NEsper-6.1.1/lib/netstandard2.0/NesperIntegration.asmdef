@@ -1,12 +1,7 @@
 {
-    "name": "XRTK.Examples",
+    "name": "NesperIntegration",
     "rootNamespace": "",
-    "references": [
-        "XRTK",
-        "XRTK.SDK",
-        "Unity.TextMeshPro",
-        "XRTK.glTF"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
