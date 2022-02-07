@@ -14,22 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configurations:
   - instancedType:
-      reference: fe458876-cc0f-4b6f-9459-544ddf6a9263
-    name: Boundary System
-    priority: 0
-    platformEntries:
-      runtimePlatforms:
-      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 11400000, guid: ef4d986bb3f8e164781a88b8d4b1cf94, type: 2}
-  - instancedType:
-      reference: 6191eb65-ec4c-434a-9a43-939fbc398582
-    name: Examples Hub System
-    priority: 0
-    platformEntries:
-      runtimePlatforms:
-      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
-    profile: {fileID: 11400000, guid: db0cf88aa415d694aa69c874ac97b854, type: 2}
-  - instancedType:
       reference: 5c656ee3-fe7c-4fb3-b3ee-df3fc0d0973d
     name: Mixed Reality Camera System
     priority: 1
@@ -45,5 +29,29 @@ MonoBehaviour:
       runtimePlatforms:
       - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
     profile: {fileID: 11400000, guid: 41481abd1e4d94e498f813c4e7e6d251, type: 2}
+  - instancedType:
+      reference: fe458876-cc0f-4b6f-9459-544ddf6a9263
+    name: Boundary System
+    priority: 0
+    platformEntries:
+      runtimePlatforms:
+      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
+    profile: {fileID: 11400000, guid: ef4d986bb3f8e164781a88b8d4b1cf94, type: 2}
+  - instancedType:
+      reference: 9453c088-285e-47aa-bfbb-dafd9109fdd5
+    name: Locomotion System
+    priority: 3
+    platformEntries:
+      runtimePlatforms:
+      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
+    profile: {fileID: 11400000, guid: 27489e63105110d4b8c49b002dbab157, type: 2}
+  - instancedType:
+      reference: 6191eb65-ec4c-434a-9a43-939fbc398582
+    name: Examples Hub System
+    priority: 3
+    platformEntries:
+      runtimePlatforms:
+      - reference: c6bf6315-2e9c-4602-827d-2d4871d29422
+    profile: {fileID: 11400000, guid: db0cf88aa415d694aa69c874ac97b854, type: 2}
   registeredServiceProvidersProfile: {fileID: 11400000, guid: 511ad0cf7c4894a4b871c18a457f96f8,
     type: 2}

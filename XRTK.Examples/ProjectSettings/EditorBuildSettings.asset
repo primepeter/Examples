@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/NewScene.unity
+    guid: 3444e1885a781d1449cd31ca55ca0a0c
+  - enabled: 1
     path: Assets/XRTK.Examples/BaseScene.unity
     guid: 092b39bb8f12afa498a539bd456a71d6
   - enabled: 1
